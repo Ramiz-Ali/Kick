@@ -232,7 +232,7 @@ export default function FootballAssistant() {
                   {aiModels[level].avatar}
                 </span>
                 <h2 className="text-lg font-bold text-gray-800 capitalize">{level}</h2>
-                <p className="text-gray-500 sm:text-[10px] md:text-[14px] mt-1">
+                <p className="text-gray-500 text-[10px] md:text-[14px] mt-1">
                   {aiModels[level].name}
                 </p>
               </div>
