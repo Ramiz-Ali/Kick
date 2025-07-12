@@ -108,7 +108,7 @@ export default function AdminDashboard() {
                   Admin Roles
                 </h2>
               </div>
-              <div className="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+              <div className="p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
                   <div className="flex items-center space-x-3">
                     <FiShield className="text-red-500 text-xl" />
@@ -127,24 +127,15 @@ export default function AdminDashboard() {
                     </div>
                   </div>
                 </div>
-                <div className="bg-gray-50 p-4 rounded-lg border border-gray-200">
-                  <div className="flex items-center space-x-3">
-                    <FiHeadphones className="text-green-500 text-xl" />
-                    <div>
-                      <h3 className="font-medium text-gray-900">support@example.com</h3>
-                      <p className="text-sm text-gray-500">Support</p>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
 
             {/* Quick Access Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* User Management */}
               <div
                 className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow cursor-pointer"
-                onClick={() => router.push('/admin/users')}
+                onClick={() => router.push('/admindashboard/users')}
               >
                 <div className="flex items-center space-x-4">
                   <div className="p-3 bg-indigo-100 rounded-full text-indigo-600">
@@ -160,7 +151,7 @@ export default function AdminDashboard() {
               {/* Content Management */}
               <div
                 className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow cursor-pointer"
-                onClick={() => router.push('/admin/content')}
+                onClick={() => router.push('/admindashboard/question')}
               >
                 <div className="flex items-center space-x-4">
                   <div className="p-3 bg-green-100 rounded-full text-green-600">
@@ -169,22 +160,6 @@ export default function AdminDashboard() {
                   <div>
                     <h2 className="font-bold text-xl text-gray-900">Content Management</h2>
                     <p className="text-gray-600">Edit and manage website content</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Analytics */}
-              <div
-                className="bg-white rounded-2xl shadow-sm p-6 hover:shadow-md transition-shadow cursor-pointer"
-                onClick={() => router.push('/admin/analytics')}
-              >
-                <div className="flex items-center space-x-4">
-                  <div className="p-3 bg-purple-100 rounded-full text-purple-600">
-                    <FiBarChart2 className="text-xl" />
-                  </div>
-                  <div>
-                    <h2 className="font-bold text-xl text-gray-900">Analytics</h2>
-                    <p className="text-gray-600">View traffic and user behavior</p>
                   </div>
                 </div>
               </div>
